@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin page</title>
+</head>
+<body>
+    <header class="header">
+      <!-- Menu Section -->
+        <div class="btns">
+            <button style="border-color: green;" type="button" class="button">
+                <span  class="button__iconi">
+                    <ion-icon  name="basket"></ion-icon>
+                  </span>
+                <span class="button__text">Checkouts Steps</span>
+              </button>
+            
+              <button type="button" class="button">
+                <span class="button__iconi">
+                    <ion-icon name="laptop"></ion-icon>
+                  </span>
+                <span class="button__text">Display Settings</span>
+              </button>
+        
+              <button type="button" class="button">
+                <span class="button__iconi">
+                    <ion-icon name="settings"></ion-icon>
+                  </span>
+                <span class="button__text">Advanced Settings</span>
+              </button>
+        
+              <button type="button" class="button">
+                <span class="button__iconi">
+                    <ion-icon name="radio-button-on"></ion-icon>
+                  </span>
+                <span class="button__text">Button Settings</span>
+              </button>
+        
+              <button type="button" class="button">
+                <span class="button__iconi">
+                    <ion-icon name="key"></ion-icon>
+                  </span>
+                <span class="button__text">Plugin Liscence</span>
+              </button>
+        </div>
+
+        <div class="list">
+            <h4 class="fs-5" style="font-weight: bold;">Title</h4>
+            <h4 class="fs-5" style="font-weight: bold;">Display Index</h4>
+            <h5> <span class="addbtn">Add new step</span><span class="button__iconn">
+                <ion-icon  name="add-circle-outline" style="color: blue;"></ion-icon>
+              </span></h5>
+        </div>
+
+        <!-- Grid Section -->
+        <div class="grids">
+            <div class="grid">
+                <h2>Login</h2>
+                <button  class="number">1</button>
+                <div class="end">
+                  <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                  <span class="button__icon">
+                      <ion-icon style=" color: rgb(165, 165, 165);" name="create"></ion-icon>
+                  </span>
+                </div>
+            </div>
+            <div class="grid">
+                <h2>Billing</h2>
+                <button style="border-color: blue;" class="number">2</button>
+                <div class="end">
+                  <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                  <span class="button__icon">
+                      <ion-icon style=" color: rgb(165, 165, 165);" name="create"></ion-icon>
+                  </span>
+                </div>
+            </div>
+            <div class="grid">
+                <h2 data-bs-toggle="modal" data-bs-target="#exampleModal">Shipping</h2>
+                <button style="margin-right: 20px;" class="number">3</button>
+                <div class="end">
+                  <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                  <span class="button__icon">
+                      <ion-icon style=" color: rgb(165, 165, 165);" name="create"></ion-icon>
+                  </span>
+                </div>
+            </div>
+            <div class="grid">
+                <h2>Order Info</h2>
+                <button style="margin-right: 30px;" class="number">4</button>
+                <div class="end">
+                  <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                  <span class="button__icon">
+                      <ion-icon style=" color: rgb(165, 165, 165);" name="create"></ion-icon>
+                  </span>
+                </div>
+            </div>
+            <div class="grid">
+                <h2>Payment</h2>
+                <button style="margin-right: 20px;" class="number">5</button>
+                <div class="end">
+                  <label class="switch" >
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                  <span class="button__icon">
+                      <ion-icon style=" color: rgb(165, 165, 165);" name="create"></ion-icon>
+                  </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Section -->
+        <div class="submit">
+            <a href="#" class="buttns">Reset</a>
+            <a href="#" class="buttns">Save Changes</a>
+        </div>
+
+    </header>
+
+
+
+
+      <!-- Modal Section -->
+      <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div style="width: 800px; margin: 0 -190px;" class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Step</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div style="background-color: rgb(245, 245, 245)" class="modal-body">
+              <div class="editcontent">
+                <div class="lineone">
+                  <h5 class="fs-6">Enable</h5>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+
+                <div class="linetwo">
+                  <h5 class="fs-6">Name</h5>
+                  <h5 class="fs-6">Step Title</h5>
+                </div>
+
+                <div class="linethree">
+                  <button>Shipping</button>
+                  <button class="shipping">Shipping</button>
+                </div>
+                <p>Action Hook Name: <span>avfdrtc_woocommerce_demo_cart_step  </span>   |   <ion-icon name="copy"></ion-icon></p>
+
+                <div class="linefour">
+                  <h4 class="fs-6" style="font-weight: bold;">Index Type</h4>
+                  <div class="radio">
+                    <p><ion-icon name="radio-button-off"></ion-icon>  Text Index</p>
+                    <p><ion-icon style="color: blue;" class="ptag" name="radio-button-on"></ion-icon>  Icon Index</p>
+                  </div>
+                </div>
+
+                <button type="button" class="buttonss" style="background-color: rgb(67, 67, 204);">
+                  <span class="button__icons">
+                    <ion-icon name="cloud-upload"></ion-icon>
+                  </span>
+                  <span class="button__texts">Upload a file</span>
+                </button>
+
+                <div class="linefive">
+                  <h5 class="fs-6" style="margin-top: 20px;">Enable Content Settings</h5>
+                  <label class="switch" style="margin-top:20px ;">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+
+                <div class="linesix">
+                  <h5 class="fs-6">Content Background Color</h5>
+                  <h5 class="fs-6">Content Font Color</h5>
+                </div>
+                
+                <div class="linethree">
+                  <button class="btn" style="border-color: rgb(231, 231, 231);">#FB9292</button>
+                  <button class="btn" style="border-color: rgb(231, 231, 231);">#131313</button>
+                </div>
+
+                <div class="lineseven">
+                  <h5 class="fs-6">Custom Content</h5>
+                  <div class="input-group">
+                
+                    <textarea class="form-control"placeholder="Test" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
+
+                  <div class="lineeight">
+                    <h5 class="fs-6">Display Position</h5>
+                    <div class="btn-group">
+                      <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Above the default fields
+                      </button>
+
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+              <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
